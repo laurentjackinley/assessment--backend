@@ -19,7 +19,7 @@ module.exports = {
     },
     createUser: (req, res) => {
         database.push(req.body)
-        res.status(200).send({success: true})
+        res.status(200).send({success: true, info:database})
     },
     incUser: (req,res) => {
         const name = req.params.name

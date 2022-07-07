@@ -58,7 +58,7 @@ const incPower = (event) => {
 
     const name = nameIncInput.value
 
-    axios.put (baseURL + '/api/inUser/' + name)
+    axios.put (baseURL + '/api/incUser/' + name)
     .then ((response) => {
         if (response.data.success) {
             console.log('new database looks like:')
